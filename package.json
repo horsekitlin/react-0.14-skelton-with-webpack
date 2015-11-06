@@ -1,0 +1,37 @@
+{
+  "name": "webpack-test",
+  "version": "0.0.0",
+  "description": "test webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "rm -rf build && NODE_ENV=production webpack -p --config webpack.config.js && webpack-dev-server --content-base build/",
+    "build": "rm -rf build; NODE_ENV=production webpack -p --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build;"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^5.5.5",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.14.4",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.2",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.1.2",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "express": "^4.12.4",
+    "http-proxy": "^1.11.1",
+    "jquery": "^2.1.4",
+    "lodash": "^3.9.3"
+  }
+}
